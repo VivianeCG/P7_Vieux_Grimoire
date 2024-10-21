@@ -16,36 +16,44 @@ app.get('/api/books',(req, res, next) =>{
 
    res.status(200).json();
 });
+
 app.get('/api/books/:id',(req, res, next) =>{
 
-    res.status(200).json();
+    res.status().json();
  });
+
  app.get('/api/books/bestrating',(req, res, next) =>{
 
-    res.status(200).json();
+    res.status().json();
  });
 
  app.post('/api/books', (req, res, next) =>{
     res.status(201).json({message: 'livre créé'});
 });
+
  app.post('/api/books/:id/rating',(req, res, next) =>{
 
-    res.status(201).json();
+    res.status().json();
  });
+
  app.post('/api/auth/signup',(req, res, next) =>{
 
-    res.status(201).json();
+    res.status().json();
  });
+
  app.post('/api/auth/login',(req, res, next) =>{
 
     res.status().json();
  });
+
  app.put('/api/books/:id',(req, res, next) =>{
 
     res.status().json();
  });
+ 
  app.delete('/api/books/:id',(req, res, next) =>{
 
     res.status().json();
  });
+
 module.exports = app;
